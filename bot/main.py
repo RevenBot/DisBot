@@ -9,11 +9,6 @@ class MyClient(discord.Client):
         channel=message.channel
         print('Nome canale: {0.channel.name} id: {0.channel.id}'.format(message))
         print('Message from {0.author}: {0.content}'.format(message))
-        question = str(input("Rispondere "))
-        if(question!='0'):
-            await channel.send(question)
-            return
-        print('-------Message from {0.author}: {0.content}'.format(message))
         if(message.author==client.user):
             return
         if(message.author.name=='k REVENGE k'):
