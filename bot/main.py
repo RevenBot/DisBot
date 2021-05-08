@@ -6,7 +6,7 @@ logger.setLevel(logging.DEBUG)
 handler = logging.FileHandler(filename='discord.log', encoding='utf-8', mode='w')
 handler.setFormatter(logging.Formatter('%(asctime)s:%(levelname)s:%(name)s: %(message)s'))
 logger.addHandler(handler)
-# token=os.get.env("")
+token=os.get.env("DISCORD_BOT_TOKEN")
 
 class MyClient(discord.Client):
     async def on_ready(self):
@@ -30,4 +30,4 @@ class MyClient(discord.Client):
             await channel.send('ciao panzone')
 
 client = MyClient(activity=discord.Game(name='GTA con zRoCky'))
-client.run('Nzg5MTYyNDg2MTI5NjIzMDQw.X9uC1g.bmz42V1UeeZsgMhAMxhQH55dEkU')
+client.run(token)
