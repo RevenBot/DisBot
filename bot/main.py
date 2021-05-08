@@ -1,6 +1,6 @@
 import discord
 import os
-token=os.get.env("DISCORD_BOT_TOKEN")
+token=os.environ("DISCORD_BOT_TOKEN")
 
 class MyClient(discord.Client):
     async def on_ready(self):
