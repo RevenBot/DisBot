@@ -1,6 +1,6 @@
 import discord
 import os
-token=os.environ("DISCORD_BOT_TOKEN")
+#token=os.environ("DISCORD_BOT_TOKEN")
 
 class MyClient(discord.Client):
     async def on_ready(self):
@@ -24,4 +24,4 @@ class MyClient(discord.Client):
             await channel.send('ciao panzone')
 
 client = MyClient(activity=discord.Game(name='GTA con zRoCky'))
-client.run(token)
+client.run("Nzg5MTYyNDg2MTI5NjIzMDQw.X9uC1g.bRIFuOhPaTPR6tUcVePigE_-_3c")
