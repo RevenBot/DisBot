@@ -1,7 +1,7 @@
 import discord
 import os
-token=os.environ('DISCORD_BOT_TOKEN')
-
+from boto.s3.connection import S3Connection
+token = S3Connection(os.environ['DISCORD_BOT_TOKEN'])
 class MyClient(discord.Client):
     async def on_ready(self):
         print('Logged on as {0}!'.format(self.user))
