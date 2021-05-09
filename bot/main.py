@@ -18,5 +18,5 @@ class MyClient(discord.Client):
             await message.add_reaction('🤙')
             await channel.send('ciao panzone')
 
-client = MyClient(activity=discord.Game(name='GTA con zRoCky'))
+client = MyClient(activity=discord.Game(name='GMOD con zRoCky'))
 client.run(token)
