@@ -1,2 +1,3 @@
 # RevenBot
-Discord bot for hobbit
+Discord bot for hobby
+
