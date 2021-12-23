@@ -1,3 +1,3 @@
 # RevenBot
-Discord bot for hobby
+Discord bot for fun
 
